@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcation History</title>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+  rel="stylesheet"
+/>
+ </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fffafa;">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+        <!-- Left links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item" style="color: white;">
+            <a class="nav-link active" aria-current="page" style="color: black;" href="http://localhost:3000/index1.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="http://localhost:3000/index.html">CREATE USERS</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="http://localhost:4000/">ALL USERS</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="http://localhost:3000/transcation.html">TRANSFER MONEY</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="http://localhost:3000/index1.html#contact">CONTACT</a>
+          </li> 
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+
+    <h3 style="text-align: center; font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bolder; margin-top: 79px;">TRANSCATION HISTORY</h3>
+    <div class="container mt-5 mb-5 pb-5">
+    <table class="table table-striped" style="margin-top: 10px;">
+        <thead>
+          <tr>
+            <!--<th scope="col">ID</th>-->
+            <th scope="col">FROM</th>
+            <th scope="col">TO</th>
+            <th scope="col">AMOUNT</th>
+            <th scope="col">DATE & TIME</th> 
+            <th scope="col">RESPONSE</th>
+          </tr>
+        </thead> 
+        <tbody>   
+            <tr style= "background-color: papayawhip;">
+                <!--<th scope="row"><%= user._id %></th>-->
+                <td>David</td>
+                <td>Riya Somani</td>
+                <td>5000</td> 
+                <td id="showDate">Sun Jul 17 2021 10:11:55 GMT+0530 (India Standard Time)
+                </td>
+                <td><a class="btn btn-sm btn-secondary"  style="background:#A83E51; border: none; color: whitesmoke;" href="#">SUCCESS</a> </td>
+            </tr>  
+            <tr style= "background-color: papayawhip;">
+              <!--<th scope="row"><%= user._id %></th>-->
+              <td>Kaira</td>
+              <td>Kabir</td>
+              <td>3000</td> 
+              <td id="showDate1">
+                Sun Jul 18 2021 12:13:19 GMT+0530 (India Standard Time)
+              </td>
+              <td><a class="btn btn-sm btn-secondary"  style="background:#A83E51; border: none; color: whitesmoke;" href="#">SUCCESS</a> </td>
+          </tr>
+          <tr style= "background-color: papayawhip;">
+            <!--<th scope="row"><%= user._id %></th>-->
+            <td>Ayan</td>
+            <td>Neha</td>
+            <td>3000</td> 
+            <td id="showDate2">
+                <script>
+                    document.getElementById("showDate2").innerHTML = Date();
+                </script>
+            </td>
+            <td><a class="btn btn-sm btn-secondary"  style="background:#A83E51; border: none; color: whitesmoke;" href="#">SUCCESS</a> </td>
+        </tr>
+        </tbody>
+      </table> 
+    </div>
+</body>
+</html>

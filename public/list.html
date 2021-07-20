@@ -1,0 +1,28 @@
+<h3><a class="btn btn-secondary" href="/"><i class="fa fa-plus"></i> Create New</a> Employee List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email Id</th>
+            <th>Contact No</th>
+            <th>Mode of Verification</th>
+            <th>Verification Id</th>
+            <th>Address</th>
+            <th>Postal Code</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.fullName}}</td>
+            <td>{{this.emailid}}</td>
+            <td>{{this.phno}}</td>
+            <td>{{this.verifmode}}</td>
+            <td>{{this.verifid}}</td> 
+            <td>{{this.address}}</td>
+            <td>{{this.postcode}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

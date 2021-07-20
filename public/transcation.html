@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+
+<body>   
+    <div class="wrapper">
+        <div class="title">
+            Transfer Amount
+        </div>
+        <form action="/create_acc" method="POST">
+            <div class="inputs">
+                <div class="inputfield">
+                    <label>FROM:</label>
+                    <select name="transact" id="transact" class="input">
+                        <option value="user1">David</option>
+                        <option value="user1">Riya Somani</option>
+                        <option value="user1">Ram</option>
+                        <option value="user1">Chris</option>
+                        <option value="user1">Neha</option>
+                        <option value="user1">Ayan</option>
+                        <option value="user1">Jehangir</option>
+                        <option value="user1">Kaira</option>
+                        <option value="user1">Kabir</option>
+                        <option value="user1">Aadirai</option>
+                    </select>    
+                   
+                </div>
+                <div class="inputfield">
+                    <label>TO:</label>
+                    <select name="transact" id="transact" class="input">
+                        <option value="user1">David</option>
+                        <option value="user1">Riya Somani</option>
+                        <option value="user1">Ram</option>
+                        <option value="user1">Chris</option>
+                        <option value="user1">Neha</option>
+                        <option value="user1">Ayan</option>
+                        <option value="user1">Jehangir</option>
+                        <option value="user1">Kaira</option>
+                        <option value="user1">Kabir</option>
+                        <option value="user1">Aadirai</option>
+                    </select>    
+                </div>
+                <div class="inputfield">
+                    <label style="font-size: 15px;">AMOUNT:</label>
+                    <input name="phno" type="text" class="input" required>
+                </div> 
+                <div class="inputfield terms">
+                    <label class="check">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+          </label>
+                    <p>Agreed to terms and conditions</p>
+                </div>
+                <button onclick="sweetalert()" type="button" style="padding: 7px;">SUBMIT</button> 
+                <a href="transhist.html">
+                    <button type="button" style="margin-left: 30px; padding: 7px;">TRANSCATION HISTORY</button>
+                </a>
+                <a href="index1.html">
+                <button type="button" style="margin-left: 30px; padding: 7px;">HOME</button>
+                </a>
+            </div>
+           
+        </form>  
+    </div> 
+    
+        <script>
+           function sweetalert(){
+            swal({
+  title: "Success",
+  text: "Transcation done successfully!!",
+  icon: "success",
+  timer:9000,
+  button: "close",
+});
+
+           }
+        </script> 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
